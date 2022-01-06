@@ -13,8 +13,10 @@
       <div id="page-top">
         <h1 class="title">Shopping List</h1>
         <p>My Shopping List</p>
+        <!-- Shopping list search box -->
         <form id="item-search">
           <input type="text" name="" id="" placeholder="Search list items...">
+          <!-- Show/Hide functionality -->
           <div id="check">
             <label for="hide">Hide Shopping List</label>
             <input type="checkbox" name="hide" id="hide">
@@ -23,11 +25,13 @@
       </div>
     </header>
 
+    <!-- Add Shopping List Items -->
     <form id="add-item">
       <input type="text" name="add" id="add" placeholder="What would you like to buy?">
       <button>Add Item</button>
     </form>
-
+    
+    <!-- Render the items as a list -->
     <div id="list">
       <h2 class="title">Items to buy</h2>
       <ul>
@@ -50,6 +54,7 @@
       </ul>
     </div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>

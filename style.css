@@ -125,9 +125,9 @@ h2 {
 
 #tab-wrapper .panel {
   display: none;
-  margin: 0 2rem;
+  margin: 0rem 2rem;
   border: 1px solid lightgray;
-  padding: 0.1rem;
+  padding: 0 1rem;
   border-radius: 0.25rem;
 }
 
@@ -137,4 +137,11 @@ h2 {
 
 #tab-wrapper .selected {
   background-color: lightblue;
+}
+
+.show {
+  background: lightgoldenrodyellow;
+  width: 100px;
+  padding: 10px;
+  border: 1px solid yellow;
 }

@@ -77,7 +77,7 @@ checkbox.addEventListener('change', (e) => {
   }
 });
 
-// ***** Page Bottom Joke Tab *****
+// ***** Page Bottom Tab functionality *****
 let headings = document.querySelector('.heading');
 let panels = document.querySelectorAll('.panel');
 let selectedPanel = null;
@@ -102,4 +102,12 @@ headings.addEventListener('click', (e) => {
   });
 });
 
-// ***** Page Bottom Info Tab *****
+// Display the Answer
+let answerButton = document.getElementById('showAnswer');
+answerButton.addEventListener('click', answer);
+
+function answer() {
+  document.getElementById('answer').classList.add('show');
+  document.getElementById('answer').textContent = 'A Parrot!';
+  answerButton.style.display = 'none';
+}

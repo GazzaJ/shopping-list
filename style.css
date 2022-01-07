@@ -49,3 +49,62 @@ body {
 h2 {
   font-weight: normal;
 }
+
+#add-item {
+  width: 400px;
+  margin: 0 auto;
+}
+
+#add-item input {
+  width: 300px;
+  display: block;
+  margin: 20px 0 0 0;
+  padding: 0.5rem;
+  border: 1px solid rgb(216, 216, 216);
+  font-size: 1rem;
+  border-radius: 2px 0 0 2px;
+  float: left;
+}
+
+#add-item button {
+  width: 80px;
+  cursor: pointer;
+  color: #fff;
+  background: rgb(23, 175, 23);
+  padding: 0.5rem 1.25rem;
+  border: 1px solid lightslategray;
+  font-size: 1rem;
+  margin: 20px 0 0 2px;
+}
+
+#list {
+  margin: 2rem;
+}
+
+#list ul {
+  list-style: none;
+  padding: 0;
+}
+
+#list li {
+  padding: 1.5rem 1rem;
+  border-left: 5px solid rgb(211, 211, 211);
+  margin: 1.5rem 1rem;
+}
+
+#list li:hover {
+  border-color: tomato;
+}
+
+.delete {
+  float: right;
+  background: tomato;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.delete:hover {
+  background: navy;
+}

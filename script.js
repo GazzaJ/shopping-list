@@ -76,3 +76,30 @@ checkbox.addEventListener('change', (e) => {
     shoppingList.style.display = 'block';
   }
 });
+
+// ***** Page Bottom Joke Tab *****
+let headings = document.querySelector('.heading');
+let panels = document.querySelectorAll('.panel');
+let selectedPanel = null;
+
+headings.addEventListener('click', (e) => {
+  let target = e.target;
+  let dataAttribute = e.target.dataset.clicked;
+  if (target.tagName == 'LI') {
+    if (selectedPanel != null) {
+      selectedPanel.classList.toggle('selected');
+    }
+    selectedPanel = target;
+    selectedPanel.classList.toggle('selected');
+  }
+  let targetPanel = document.querySelector(dataAttribute);
+  panels.forEach((panel) => {
+    if (panel == targetPanel) {
+      panel.classList.add('active');
+    } else {
+      panel.classList.remove('active');
+    }
+  });
+});
+
+// ***** Page Bottom Info Tab *****
